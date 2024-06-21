@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+section{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.contac-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contac-1 article{
+    width: 50%;
+}
+.contac-1 h2{
+    margin: auto;
+    padding-top: 25px;
+    font-size: 5em;
+    font-family: Lilita;
+    color: #FFBC5A;
+}
+.contac-1 article p{
+    margin: auto;
+    padding: 15px 0px 30px 0px;
+    font-size: 1.5em;
+    font-family: Urbanist;
+}
+
+.info h5{
+    margin: auto;
+    padding-top: 25px;
+    font-size: 1.5em;
+    font-family: Urbanist;
+    color: #FFBC5A;  
+}
+.ubicacion h2{
+    margin: auto;
+    padding-top: 25px;
+    font-size: 2.5em;
+    font-family: Lilita;
+    color: #FFBC5A;
+}
+.ubicacion article{
+    display: flex;
+    justify-content: center;
+}
+.ubicacion iframe{
+    border-radius: 14px;
+    box-shadow: 8px 8px #ffbd5a98;
+    margin: 60px;
+}
+.formulario{
+    margin-bottom: 30px;
+    border-radius: 14px;
+    border: 2px solid #FFBC5A ;
+    padding: 0px 60px;
+}
+.formulario h4{
+   margin: 15px 0px 0px;
+    font-size: 3em;
+    font-family: Lilita;
+    color: #FFBC5A; 
+}
+.formulario p{
+    margin-top: 0px;
+    padding: 20px 0px;
+}.formulario label{
+    font-size: 1.3em;
+    font-family: Urbanist;
+    color: #FFBC5A; 
+}
+input,
+select,
+textarea {
+    padding: 10px;
+    margin: 15px 0px;
+    font-size: 1em; 
+    border: 1px solid #ccc;
+    background-color: #e4e4e4;
+    border-radius: 4px;
+    height: 40px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+.bot-1{
+    display: flex;
+    justify-content: center;
+}
+button {
+    margin: 30px 0px;
+    padding: 15px 20px;
+    background-color: #FFBC5A;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Urbanist;
+    font-size: 2em;
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.comentario-f{
+    display: flex;
+    justify-content: center;
+}
+.mensaje-4{
+    margin-bottom: 30px;
+    width: 60%;
+    background: #FFBC5A;
+    border-radius: 14px;
+    font-family: Urbanist;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #fff;
+    text-align: center;
+}

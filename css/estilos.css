@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Lilita';
+    src: url(../fuentes/lilitaone-regular-webfont.eot);
+    src: url(../fuentes/lilitaone-regular-webfont.eot) format('embedded-opentype'),
+         url(../fuentes/lilitaone-regular-webfont.woff) format('woff'),
+         url(../fuentes/lilitaone-regular-webfont.ttf) format('truetype'),
+         url(../fuentes/lilitaone-regular-webfont.svg) format('svg');
+}
+@font-face {
+    font-family: 'Urbanist';
+    src: url(../fuentes/Urbanist-Regular.ttf);
+    src: url(../fuentes/Urbanist-Medium.ttf) format('truetype'),
+         url(../fuentes/Urbanist-Regular.ttf) format('truetype'),
+         url(../fuentes/Urbanist-Bold.ttf) format('truetype');
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFBC5A;
+}
+.menu img{
+    width:115px ;
+    margin:15px 30px;
+}
+.menu ul{
+    display: flex;
+    background-color: #FFBC5A;
+    padding-right:70px;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+    list-style: none;
+}
+.menu li{
+    transition: transform 0.3s ease;
+}
+.menu ul a{
+    margin-right:5px;
+    color:white ;
+    padding: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Urbanist;
+}
+.menu li:hover{
+    transform: scale(1.5);
+}
+/*banner*/
+#banner {
+    position: relative;
+    height: 50vh; 
+}
+
+#banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: banner 21s infinite;
+}
+
+#banner img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#banner img:nth-child(2) {
+    animation-delay: 7s;
+}
+
+#banner img:nth-child(3) {
+    animation-delay: 14s;
+}
+
+@keyframes banner {
+    0%, 33% { opacity: 1; }
+    38%, 100% { opacity: 0; }
+}
+/*Bienvenido*/
+.bienvenido {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bienvenido h2{
+    margin: auto;
+    padding-top: 25px;
+    font-size: 5em;
+    font-family: Urbanist;
+    font-weight: bold;
+    color: #FFBC5A;
+}
+header>p {
+    margin: auto;
+    padding: 15px 0px 30px 0px;
+    font-size: 2em;
+    font-family: Urbanist;
+}
+.goldy{
+    display: flex;
+}
+.goldy img {
+    width: 200px;
+    border-radius: 14px;
+    box-shadow: 8px 8px #ffbd5a98;
+}
+.txtgoldy{
+    margin-left: 25px;
+}
+.txtgoldy h3{
+    margin: auto;
+    font-family: Lilita;
+    color: #FFBC5A;
+    font-size: 3em;
+}
+.txtgoldy{
+    font-family: Urbanist;
+    font-size: 2em;
+}
+/*Servicios*/
+.serv-1{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex; 
+    flex-wrap: wrap;
+
+}
+.serv-1 h2{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: Urbanist;
+    color: #FFBC5A;
+    font-size: 7em;
+}
+.serv-1 p{
+    font-family: Urbanist;
+    font-size: 2em;
+}
+.serv-1 article{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.serv-1 article figure{
+    width: 45%; 
+    margin: 10px; 
+    box-sizing: border-box;
+}
+.serv-1 figcaption{
+    margin: auto;
+    padding-top: 15px;
+    font-family: Urbanist;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.serv-1 img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+}
+.serv-1 img:hover{
+    transform: scale(1.1);
+}
+.serv-1 .alimento{
+    
+    border: 2px solid #FF8E59 ;
+    box-shadow: 8px 8px #ff905c83;
+}
+.serv-1 .vacunaciones {
+    border: 2px solid #59B8FF;
+    box-shadow: 8px 8px #59b7ff88;
+}
+.serv-1 .smedicos {
+    border: 2px solid #59B8FF ;
+    box-shadow: 8px 8px #59b7ff88;
+}
+.serv-1 .peluqueria {
+    border: 2px solid #FFBC5A ;
+    box-shadow: 8px 8px #ffbd5a98;
+}
+.patron1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin:auto; 
+}
+.patron1 img{
+    width: 100%;
+    height: auto; 
+    max-height: 150px; 
+    object-fit: cover;
+    margin-top: 30px;
+}
+/*antojos*/
+.antojos article{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.antojos h3{
+    align-self: flex-start;
+    font-size: 4em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Urbanist;
+    font-weight: bold;
+    color: #FF8E59;
+}
+.imgantojos{
+    background: #FF9563 ;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 14px;
+}
+.antojos figure{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 15%;
+}
+.imgantojos img{
+    width: 100%;
+    border-radius: 14px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.imgantojos img:hover{
+    transform: scale(1.1);
+}
+.antojos a {
+    display: inline-block;
+    padding: 10px 70px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Urbanist;
+    background-color: #FF9563;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    border-radius: 40px;
+}
+/*cita*/
+.contacto{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.contacto h3{
+    font-size: 3em;
+    font-family: Urbanist;
+    font-weight: bold;
+    color: #FF8E59;
+}
+.contacto p{
+    font-size: 2em;
+    margin-top: auto;
+    font-family: Urbanist;
+}
+.contacto div{
+    display: flex;
+    justify-self: center;
+    background: url(../);
+}
+.contacto a{
+    display: inline-block;
+    padding: 10px 70px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Urbanist;
+    background-color: #FFBC5A;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.test-1{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.test-1 h3{
+    margin: 25px 0px;
+    font-size: 5em;
+    font-family: Lilita;
+    color: #FFBC5A;
+}
+.test-2{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.test-2 h4{
+    margin: auto;
+    font-family: Lilita;
+    color: #FF8E59;
+    font-size: 3em;
+}
+.test-2 p{
+    font-family: Urbanist;
+    font-size: 2em;
+}
+.comentario{
+    display: flex;
+}
+.comentario img{
+    width: 200px;
+    border-radius: 14px;
+    box-shadow: 8px 8px #ffbd5a98;
+    background: url(../img/F-Testimonio-01-04.jpg);
+}
+.calificacion {
+    display: flex;
+    margin-top: 10px;
+}
+.calificacion figure img {
+    width: 50px;
+    height: 50px;
+    background: none;
+    box-shadow: none;
+}
+.comentarios a{
+    display: inline-block;
+    padding: 10px 70px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Urbanist;
+    background-color: #FFBC5A;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.mensaje{
+    width: 90%;
+    margin-top: 20px;
+    padding: 2px;
+    background: #FFBC5A;
+    border-radius: 14px;
+    color: #fff;
+    text-align: center;
+}
+.menu-p a{
+    transition: transform 0.3s ease;
+}
+.menu-p a:hover{
+    transform: scale(1.5);
+}
+.fondo{
+    background: #FFBC5A;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.fondo div{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+.fondo figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondo img{
+    width:400px ;
+}
+.fondo a{
+    display: flex;
+    flex-direction: column;
+    font-family: Urbanist ;
+    margin: auto;
+    color:white ;
+    padding: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+.fondo h5{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: Urbanist;
+}
+.fondo p{
+    font-size: 20px;
+    font-family: Urbanist;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.copy{
+    text-align: center;
+}
+
+

@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+section {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.equip-1 h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: Lilita;
+    color: #59B8FF;
+    font-size: 7em;
+}
+.equip-1 article{
+    display: flex;
+    flex-direction: row;
+}
+.equip-1 img{
+    max-width: 100%;
+    border-radius: 14px;
+}
+.equip-1 .medic-1 figure:nth-of-type(1) img,
+.equip-1 .medic-1 figure:nth-of-type(3) img {
+    box-shadow: 8px 8px #ffbd5a83; 
+}
+.equip-1 .medic-1 figure:nth-of-type(2) img,
+.equip-1 .medic-1 figure:nth-of-type(4) img {
+    box-shadow: 8px 8px #ff8e5988;
+}
+.medic-1 figcaption{
+    margin: auto;
+    padding-top: 15px;
+    font-family: Urbanist;
+    font-weight: bold;
+    color: #FF8E59;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.tratamientos{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.tratamientos h3{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: Urbanist;
+    color: #59B8FF;
+    font-size: 4em;
+}
+.tratamientos article{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.tratamientos article figure{
+    width: 45%; 
+    margin: 10px; 
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+.tratamientos img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 14px;
+}
+.tratamientos figure:hover{
+    transform: scale(1.1);
+}
+.tratamientos figure {
+    position: relative;
+}
+.tratamientos figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: Urbanist;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.5em;
+}
+.medicamentos h3{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: Urbanist;
+    color: #59B8FF;
+    font-size: 4em;
+}
+.medicamentos article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.medicamentos figure{
+    width: 25%;
+}
+.medicamentos img{
+    max-width: 100%;
+    border-radius: 14px;
+    border:1px solid #FFBC5A;
+    box-shadow: 8px 8px #59b7ff7e;
+}
+.mensaje2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mensaje2 .men{
+    width: 60%;
+    padding: 0px 20px;
+    border-radius: 14px;
+    font-family: Urbanist;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #59B8FF;
+}

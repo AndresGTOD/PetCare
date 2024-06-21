@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+section{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.somos-2 h2{
+    margin: auto;
+    padding-top: 25px;
+    font-size: 9em;
+    text-align: center;
+    font-family: Lilita;
+    color: #FFBC5A;
+}
+.somos-2 img{
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 8px 8px #ffbd5a98;
+}
+.somos-2 p{
+    margin: auto;
+    padding: 15px 0px 30px 0px;
+    font-size: 2em;
+    font-family: Urbanist;
+}
+.goldy-2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+}
+.goldy-2 img{
+    width: 400px;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 14px;
+    box-shadow: 8px 8px #ffbd5a98;
+}
+.mensaje-3{
+    width: 90%;
+    margin-top: 20px;
+    padding: 0px 2px;
+    background: #59B8FF;
+    border-radius: 14px;
+    color: #fff;
+    text-align: center;
+}
+
